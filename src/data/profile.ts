@@ -1,7 +1,10 @@
 const profile = {
   name: "Challa Venkata Adinaresh (Naresh Challa)",
 
-  role: "Senior DevOps Engineer",
+  role: "DevOps Engineer II (DataOps Engineer II)",
+  
+  tagline:
+    "Building scalable cloud infrastructure, automating deployments, and delivering reliable CI/CD pipelines.",
 
   location: "Bangalroe, India",
 
@@ -11,16 +14,36 @@ const profile = {
 
   linkedin: "https://www.linkedin.com/in/adinaresh-challa-2a1b92228/",
 
+  portfolio: "", // We'll update this after you share your Vercel URL
+
+  resume: "/resume/Naresh_Challa_Resume.pdf",
+
+  // Professional Summary
+
   experience: "5+ Years",
 
   company: "Sigmoid Analytics",
 
-  summary:
-    "DevOps Engineer experienced in Kubernetes, AWS, Azure, Docker, Terraform, Ansible, Helm, Linux, GitHub Actions, GitHub Admin, Jenkins,  Monitoring and CI/CD automation.",
+  projects: "1+",
+
+  availability: "Available for Cloud and DevOps Opportunities",
+
+ about: `
+DevOps Engineer with 5+ years of experience in designing,
+deploying and managing cloud-native infrastructure.
+
+Experienced in Azure, Kubernetes, Docker, Terraform,
+GitHub Actions, ArgoCD, Nexus, Linux and CI/CD automation.
+
+Passionate about Infrastructure as Code, Kubernetes,
+automation and cloud engineering.
+`,
+
 
   skills: [
     "Azure",
-    "AKS",
+    "AWS",
+    "Nexus",
     "Docker",
     "Kubernetes",
     "Helm",
@@ -31,7 +54,12 @@ const profile = {
     "Ansible",
     "Prometheus",
     "Grafana",
-    "ELK"
+    "ELK",
+    "ArgoCD",
+    "CI/CD",
+    "Git", 
+    "Bash", 
+    "Python"
   ]
 };
 

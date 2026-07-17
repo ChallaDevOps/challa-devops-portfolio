@@ -1,67 +1,52 @@
-"use client";
-
-import { TypeAnimation } from "react-type-animation";
-
 export default function HeroContent() {
   return (
     <>
       <p
         style={{
           color: "#38bdf8",
-          fontSize: "22px",
-          marginBottom: "12px",
+          fontSize: "20px",
+          marginBottom: "15px",
           fontWeight: 600,
         }}
       >
-        👋 Hello, I'm
+        Hello, I'm
       </p>
 
       <h1
         style={{
           fontSize: "64px",
-          fontWeight: "bold",
-          lineHeight: "1.1",
+          lineHeight: 1.1,
+          fontWeight: 800,
+          color: "white",
           marginBottom: "20px",
         }}
       >
-        Naresh Challa
+        Naresh
+        <br />
+        Challa
       </h1>
 
-      <div
+      <h2
         style={{
           fontSize: "30px",
-          color: "#94a3b8",
-          minHeight: "45px",
+          color: "#cbd5e1",
+          marginBottom: "25px",
         }}
       >
-        <TypeAnimation
-          sequence={[
-            "DevOps Engineer",
-            2000,
-            "Cloud Engineer",
-            2000,
-            "Azure Administrator",
-            2000,
-            "Kubernetes Enthusiast",
-            2000,
-          ]}
-          speed={45}
-          repeat={Infinity}
-        />
-      </div>
+        DevOps Engineer
+      </h2>
 
       <p
         style={{
-          marginTop: "30px",
-          maxWidth: "650px",
-          color: "#cbd5e1",
-          lineHeight: "32px",
+          maxWidth: "620px",
+          color: "#94a3b8",
+          lineHeight: 1.8,
           fontSize: "18px",
         }}
       >
         Passionate DevOps Engineer specializing in Azure, Kubernetes,
-        Docker, Terraform, GitHub Actions, Helm, Linux and
-        Infrastructure Automation.
+        Terraform, CI/CD, Docker, GitHub Actions and Infrastructure
+        Automation.
       </p>
     </>
   );

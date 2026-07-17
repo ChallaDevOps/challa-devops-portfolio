@@ -1,5 +1,6 @@
 "use client";
 
+import HeroBadge from "./hero/HeroBadge";
 import HeroButtons from "./hero/HeroButtons";
 import HeroContent from "./hero/HeroContent";
 import HeroImage from "./hero/HeroImage";
@@ -21,10 +22,10 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* Background */}
+      {/* Animated Background */}
       <HeroBackground />
 
-      {/* Foreground Content */}
+      {/* Hero Content */}
       <div
         style={{
           position: "relative",
@@ -38,13 +39,20 @@ export default function Hero() {
           alignItems: "center",
         }}
       >
+        {/* Left Side */}
         <HeroMotion>
+          <HeroBadge />
+
           <HeroContent />
+
           <HeroButtons />
+
           <HeroSocial />
+
           <HeroStats />
         </HeroMotion>
 
+        {/* Right Side */}
         <HeroImage />
       </div>
     </section>
