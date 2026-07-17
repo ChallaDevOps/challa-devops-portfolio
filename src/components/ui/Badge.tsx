@@ -8,15 +8,14 @@ export default function Badge({
   return (
     <span
       className="
+      rounded-full
+      bg-sky-500/10
+      border
+      border-sky-500/30
       px-4
       py-2
-      rounded-full
-      bg-sky-600/20
-      border
-      border-sky-500
-      text-sky-300
       text-sm
-      font-medium
+      text-sky-400
       "
     >
       {title}

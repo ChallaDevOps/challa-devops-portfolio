@@ -1,98 +1,117 @@
+import Container from "../ui/Container";
 import Card from "../ui/Card";
+import Badge from "../ui/Badge";
 import SectionTitle from "../ui/SectionTitle";
+import profile from "../../data/profile";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="bg-slate-950 py-24 px-6"
+      className="py-28 bg-slate-950"
     >
-      <div className="max-w-7xl mx-auto">
+      <Container>
 
         <SectionTitle
           title="About Me"
-          subtitle="Who Am I"
+          subtitle="Who I Am"
         />
 
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-12">
 
-          {/* Left */}
+          {/* LEFT */}
 
           <Card>
 
             <div className="flex justify-center">
 
-              <div className="w-60 h-60 rounded-full bg-slate-800 flex items-center justify-center text-7xl">
-
+              <div
+                className="
+                h-72
+                w-72
+                rounded-full
+                bg-slate-800
+                flex
+                items-center
+                justify-center
+                text-8xl
+                "
+              >
                 👨🏻‍💻
-
               </div>
 
             </div>
 
           </Card>
 
-          {/* Right */}
+          {/* RIGHT */}
 
           <Card>
 
-            <h2 className="text-4xl font-bold mb-6">
-
-              Naresh Challa
-
+            <h2 className="text-4xl font-bold mb-4">
+              {profile.name}
             </h2>
 
+            <p className="text-sky-400 text-xl mb-8">
+              {profile.role}
+            </p>
+
             <p className="text-slate-300 leading-8">
-
-              Passionate DevOps Engineer with experience in
-              Kubernetes, Azure Cloud, Docker, Helm,
-              Terraform, GitHub Actions, Linux,
-              Monitoring, CI/CD and Infrastructure
-              Automation.
-
+              {profile.summary}
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-10">
 
               <div>
 
-                <h3 className="text-sky-400 font-semibold">
+                <h4 className="text-sky-400">
                   Experience
-                </h3>
+                </h4>
 
-                <p>4+ Years</p>
-
-              </div>
-
-              <div>
-
-                <h3 className="text-sky-400 font-semibold">
-                  Current Role
-                </h3>
-
-                <p>DevOps Engineer</p>
+                <p>{profile.experience}</p>
 
               </div>
 
               <div>
 
-                <h3 className="text-sky-400 font-semibold">
+                <h4 className="text-sky-400">
+                  Company
+                </h4>
+
+                <p>{profile.company}</p>
+
+              </div>
+
+              <div>
+
+                <h4 className="text-sky-400">
                   Location
-                </h3>
+                </h4>
 
-                <p>Hyderabad</p>
+                <p>{profile.location}</p>
 
               </div>
 
               <div>
 
-                <h3 className="text-sky-400 font-semibold">
-                  Domain
-                </h3>
+                <h4 className="text-sky-400">
+                  Email
+                </h4>
 
-                <p>Cloud & DevOps</p>
+                <p>{profile.email}</p>
 
               </div>
+
+            </div>
+
+            <div className="flex flex-wrap gap-3 mt-10">
+
+              {profile.skills.map((skill) => (
+                <Badge
+                  key={skill}
+                  title={skill}
+                />
+              ))}
 
             </div>
 
@@ -100,7 +119,7 @@ export default function About() {
 
         </div>
 
-      </div>
+      </Container>
 
     </section>
   );

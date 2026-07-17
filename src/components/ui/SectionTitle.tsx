@@ -1,6 +1,6 @@
 type Props = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
 };
 
 export default function SectionTitle({
@@ -8,20 +8,16 @@ export default function SectionTitle({
   subtitle,
 }: Props) {
   return (
-    <div className="text-center mb-16">
+    <div className="mb-14">
+      {subtitle && (
+        <p className="uppercase tracking-[6px] text-sky-400 text-sm mb-3">
+          {subtitle}
+        </p>
+      )}
 
-      <p className="text-sky-400 uppercase tracking-[5px] mb-3">
-
-        {subtitle}
-
-      </p>
-
-      <h2 className="text-5xl font-bold">
-
+      <h2 className="text-5xl font-bold text-white">
         {title}
-
       </h2>
-
     </div>
   );
 }

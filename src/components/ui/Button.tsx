@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 type ButtonProps = {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
@@ -7,14 +9,15 @@ export default function Button({
   children,
   variant = "primary",
 }: ButtonProps) {
-  const styles =
-    variant === "primary"
-      ? "bg-blue-600 hover:bg-blue-700 text-white"
-      : "border border-slate-500 hover:bg-slate-800 text-white";
-
   return (
     <button
-      className={`${styles} px-6 py-3 rounded-xl font-semibold transition duration-300`}
+      className={cn(
+        "px-6 py-3 rounded-lg font-semibold transition-all duration-300",
+
+        variant === "primary"
+          ? "bg-sky-500 text-white hover:bg-sky-600"
+          : "border border-sky-500 text-sky-400 hover:bg-sky-500 hover:text-white"
+      )}
     >
       {children}
     </button>

@@ -1,100 +1,50 @@
+"use client";
+
+import HeroButtons from "./hero/HeroButtons";
+import HeroContent from "./hero/HeroContent";
+import HeroImage from "./hero/HeroImage";
+import HeroSocial from "./hero/HeroSocial";
+import HeroStats from "./hero/HeroStats";
+import HeroBackground from "./hero/HeroBackground";
+
 export default function Hero() {
   return (
-    <section id="home"
+    <section
       style={{
-        minHeight: "90vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "#0F172A",
+        minHeight: "100vh",
+        background: "#020617",
         color: "white",
-        padding: "40px",
+        display: "flex",
+        alignItems: "center",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
+      {/* Background */}
+      <HeroBackground />
+
+      {/* Foreground Content */}
       <div
         style={{
-          maxWidth: "900px",
-          textAlign: "center",
+          position: "relative",
+          zIndex: 1,
+          width: "90%",
+          maxWidth: "1200px",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "60px",
+          alignItems: "center",
         }}
       >
-        <p
-          style={{
-            color: "#38BDF8",
-            fontSize: "22px",
-            marginBottom: "20px",
-          }}
-        >
-          👋 Hello, I'm
-        </p>
-
-        <h1
-          style={{
-            fontSize: "70px",
-            marginBottom: "15px",
-            fontWeight: "bold",
-          }}
-        >
-          Naresh Challa
-        </h1>
-
-        <h2
-          style={{
-            fontSize: "32px",
-            color: "#CBD5E1",
-            marginBottom: "30px",
-          }}
-        >
-          DevOps Engineer | Cloud Engineer | SRE
-        </h2>
-
-        <p
-          style={{
-            fontSize: "20px",
-            color: "#94A3B8",
-            lineHeight: "2",
-          }}
-        >
-          Azure • Kubernetes • Docker • Terraform • Helm •
-          GitHub Actions • Jenkins • Linux • Prometheus •
-          Grafana
-        </p>
-
-        <div
-          style={{
-            marginTop: "50px",
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-          }}
-        >
-          <button
-            style={{
-              padding: "15px 35px",
-              background: "#2563EB",
-              color: "white",
-              border: "none",
-              borderRadius: "10px",
-              cursor: "pointer",
-              fontSize: "18px",
-            }}
-          >
-            Download Resume
-          </button>
-
-          <button
-            style={{
-              padding: "15px 35px",
-              background: "transparent",
-              color: "white",
-              border: "2px solid white",
-              borderRadius: "10px",
-              cursor: "pointer",
-              fontSize: "18px",
-            }}
-          >
-            Contact Me
-          </button>
+        <div>
+          <HeroContent />
+          <HeroButtons />
+          <HeroSocial />
+          <HeroStats />
         </div>
+
+        <HeroImage />
       </div>
     </section>
   );
