@@ -6,6 +6,7 @@ import HeroImage from "./hero/HeroImage";
 import HeroSocial from "./hero/HeroSocial";
 import HeroStats from "./hero/HeroStats";
 import HeroBackground from "./hero/HeroBackground";
+import HeroMotion from "./hero/HeroMotion";
 
 export default function Hero() {
   return (
@@ -37,12 +38,12 @@ export default function Hero() {
           alignItems: "center",
         }}
       >
-        <div>
+        <HeroMotion>
           <HeroContent />
           <HeroButtons />
           <HeroSocial />
           <HeroStats />
-        </div>
+        </HeroMotion>
 
         <HeroImage />
       </div>
