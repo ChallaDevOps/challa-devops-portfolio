@@ -1,7 +1,7 @@
 const profile = {
   name: "Challa Venkata Adinaresh (Naresh Challa)",
 
-  role: "DevOps Engineer II (DataOps Engineer II)",
+  role: "DevOps Engineer II (DataOps Engineer II) | Cloud Engineer | Deployment Engineer",
   
   tagline:
     "Building scalable cloud infrastructure, automating deployments, and delivering reliable CI/CD pipelines.",
@@ -21,29 +21,35 @@ const profile = {
   // Professional Summary
 
   experience: "5+ Years",
+ 
+  cloudExperience: {
+    aws: "5+ Years",
+    azure: "1 Year",
+  },  
 
   company: "Sigmoid Analytics",
 
   projects: "1+",
 
-  availability: "Available for Cloud and DevOps Opportunities",
+  availability: "Open to  Cloud and DevOps Engineering Opportunities",
 
  about: `
-DevOps Engineer with 5+ years of experience in designing,
-deploying and managing cloud-native infrastructure.
+DevOps Engineer with 5+ years of experience in cloud infrastructure,
+CI/CD automation, Kubernetes orchestration, Infrastructure as Code,
+and production support.
 
-Experienced in Azure, Kubernetes, Docker, Terraform,
-GitHub Actions, ArgoCD, Nexus, Linux and CI/CD automation.
+Hands-on experience in AWS and Azure, with expertise
+in Docker, Kubernetes, Terraform, Jenkins, GitHub Actions, Helm,
+Linux, Nexus, Prometheus, Grafana, ELK Stack, Python, and Shell scripting.
 
-Passionate about Infrastructure as Code, Kubernetes,
-automation and cloud engineering.
+Passionate about automation, reliability, cloud-native architecture,
+and building scalable deployment platforms.
 `,
 
 
   skills: [
-    "Azure",
     "AWS",
-    "Nexus",
+    "Azure",
     "Docker",
     "Kubernetes",
     "Helm",
@@ -59,7 +65,10 @@ automation and cloud engineering.
     "CI/CD",
     "Git", 
     "Bash", 
-    "Python"
+    "Python",
+    "Nexus",
+    "Prometheus",
+    "Grafana"
   ]
 };
 
