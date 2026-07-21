@@ -5,11 +5,13 @@ export default function ResumeButton() {
   return (
     <a
       href={profile.resume}
-      download
       target="_blank"
       rel="noopener noreferrer"
+      download="Naresh_Challa_Resume.pdf"
     >
-      <Button>Download Resume</Button>
+      <Button>
+        Download Resume
+      </Button>
     </a>
   );
 }

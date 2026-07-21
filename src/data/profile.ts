@@ -1,5 +1,5 @@
 const profile = {
-  name: "Challa Venkata Adinaresh (Naresh Challa)",
+  name: "Challa Venkata Adinaresh",
 
   role: "DevOps Engineer II (DataOps Engineer II) | Cloud Engineer | Deployment Engineer",
   
@@ -58,8 +58,6 @@ and building scalable deployment platforms.
     "GitHub Actions",
     "Jenkins",
     "Ansible",
-    "Prometheus",
-    "Grafana",
     "ELK",
     "ArgoCD",
     "CI/CD",

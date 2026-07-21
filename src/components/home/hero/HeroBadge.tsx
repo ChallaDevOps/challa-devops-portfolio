@@ -14,7 +14,7 @@ export default function HeroBadge() {
         marginBottom: "28px",
       }}
     >
-      🚀 Available for DevOps Opportunities
+      Available for DevOps Opportunities
     </div>
   );
 }
